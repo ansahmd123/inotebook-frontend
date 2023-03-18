@@ -64,7 +64,10 @@ const Login = () => {
                     </div>
 
                     <div className="mb-3">
-                        <input type="checkbox" onClick={togglePassword}></input>Show Password
+                        <input type="checkbox" onClick={togglePassword}></input> Show Password
+                    </div>
+                    <div className="forgot">
+                        <a href="http://localhost:3000/forgotpassword">Forgot Password?</a>
                     </div>
 
                     <button type="submit" className="btn btn-primary">Submit</button>

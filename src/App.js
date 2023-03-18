@@ -1,11 +1,11 @@
 import "./App.css";
 import Home from "./Components/Home";
 import Navbar from "./Components/Navbar";
-import About from "./Components/About";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NoteState from "./context/notes/NoteState";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
+import ForgotPassword from "./Components/ForgotPassword";
 
 
 function App() {
@@ -19,14 +19,15 @@ function App() {
               <Route exact path="/">
                 <Home />
               </Route>
-              <Route exact path="/about">
-                <About />
-              </Route>
+              
               <Route exact path="/login">
                 <Login/>
               </Route>
               <Route exact path="/signup">
                 <Signup/>
+              </Route>
+              <Route exact path="/forgotpassword">
+                <ForgotPassword/>
               </Route>
             </Switch>
           </div>
